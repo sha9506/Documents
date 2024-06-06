@@ -1,0 +1,227 @@
+%-------------------------
+% Resume in Latex
+% Author : Matty
+% Based on: https://github.com/jakegut/resume (which was itself based on https://github.com/sb2nov/resume)
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+
+\input{glyphtounicode}
+
+% -------------------- FONT OPTIONS --------------------
+% sans-serif
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% serif
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-1in} % Default was -.5in
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Subsection formatting
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\setlength{\footskip}{4.08003pt}
+
+% -------------------- START OF DOCUMENT --------------------
+\begin{document}
+
+% -------------------- HEADING--------------------
+\begin{flushright}
+  % \vspace{-4pt}
+  \color{gray}
+  \item
+\end{flushright}
+
+\vspace{-5pt}
+
+\begin{center}
+    \textbf{\Huge \scshape Sabnam Begum Hazari} \\ \vspace{8pt}
+    \small 
+    \faIcon{github}
+    \href{https://github.com/sha9506}{\underline{Github}} $  $
+    \faIcon{linkedin}
+    \href{www.linkedin.com/in/sabnam-begum-hazari-398605233}{\underline{LinkedIn}} $  $
+    \faIcon{envelope}
+    \href{mailto:sabnamhazari@gmail.com}
+    {\underline{Email}}
+\end{center}
+
+% -------------------- EDUCATION --------------------
+\section{Education}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {SRM Institute of Science and Technology}{2022-2026}
+      {Btech Computer Science and Engineering}{Current GPA: 9.45}
+      
+    \resumeSubheading
+      {Kendriya Vidyalaya \footnotesize{(Hsc)}}{2021}
+      {Science}{GPA: 8.4}
+      \resumeSubheading
+      {Kendriya Vidyalaya \footnotesize{(Ssc)}}{2019}
+      {Science}{GPA: 8.6}
+      
+  \resumeSubHeadingListEnd
+
+% -------------------- SKILLS --------------------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    
+     \textbf{Technical}{: C, C++, Python,  HTML, CSS , ReactJs , Django, DBMS, Figma } \\
+     \textbf{Soft Skills}{: Project Management , Leadership, Problem Solving}
+     
+     %{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
+     
+     % \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+     
+    }}
+ \end{itemize}
+
+% -------------------- PROJECTS --------------------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+        \resumeProjectHeading
+        {\textbf{\textbf{Decentralised Freelancing Platform}}  \footnotesize\emph{}}{June. 2024 - Present}
+        \resumeItemListStart
+            \resumeItem{
+This project aims to create a secure, transparent, and efficient platform for freelancers and clients to connect and collaborate.
+}
+            \resumeItem{
+Secure payment gateway integration for project payments. Also provides clients to review and rate freelancers based on their work.
+}
+            \resumeItem{Learned how to use Django Rest Framework (DRF) for building APIs}
+          \resumeItemListEnd
+    
+        \resumeProjectHeading
+        {\textbf{\textbf{Gojo}}  \footnotesize\emph{}}{March 2024}
+        \resumeItemListStart
+            \resumeItem{
+GOJO A Blockchain based Electricity market, increasing transparency in carbon emissions
+}
+            \resumeItem{Increases Consumer's Choice in their ability to switch to greener sources of electricity, Reduces commissions taken by DISCOMs to provide this service.}
+            \resumeItem{Increases Transparency in the Carbon Credit system which promotes the UN's Sustainable Development Goals.}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+        {\textbf{Insmarts} \footnotesize\emph{}}{Feb. 2024}
+        \resumeItemListStart
+            \resumeItem{InSmarts, powered by cutting-edge language processing, curates and summarizes articles based on your specific needs.}
+            \resumeItem{Uncover key details on topics like IPL stats or upcoming budgets with ease.}
+        \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+% -------------------- EXPERIENCE --------------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+          \resumeProjectHeading
+          {\textbf{Software developer Intern} $|$ \footnotesize\emph{Smoketree}\vspace{8pt}}{June. 2024-- Present}
+          {\small{Enhanced full stack development skills through hands-on experience with Django and ReactJS. Worked on building and optimising web applications, gaining practical knowledge in both front-end and back-end technologies.}}
+
+          \resumeProjectHeading
+          {\textbf{Software Engineer Job Simulation}\vspace{8pt} $|$ \footnotesize\emph{JPMorgan Chase}}{Mar 2024 -- Apr 2024}
+          \small{Worked on interface with a stock price data feed using company's framework and tools. Helped improving python developing skills.
+
+}
+
+% -------------------- CERTIFICATION --------------------
+
+        \subsection{Certifications}
+
+           \resumeProjectHeading
+          {\textbf{\textbf{Deep Dive into Algorithm Design Paradigms} }\vspace{8pt}}{June. 2024 }
+          {\small{Udemy}}
+          
+          \resumeProjectHeadingSUBMIT
+
+          {\textbf{\textbf{DBMS Course - Master the Fundamentals and Advanced Concepts}}\vspace{8pt}}{Mar 2024 -- Apr 2024}{\small{Scalar}}
+
+          \resumeProjectHeading
+          {\textbf{\textbf{AWS Certified Machine Learning - Speciality} }\vspace{8pt}}{Feb. 2024 }
+          {\small{Amazon Web Services(AWS) }}
+          
+    \resumeSubHeadingListEnd 
+
+\end{document}
